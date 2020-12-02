@@ -1,0 +1,114 @@
+.chapo{
+font-size: 0.5em;
+display: flex;
+align-items: flex-start;   
+}
+.logo{
+width: 15%;
+}
+#title{
+font-size: 20pt;
+display: flex;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+.promo{
+width: 100%;
+}
+
+ul{
+list-style: none;
+padding: 0%;
+margin: 0%;
+}
+
+li{
+float: left;
+}
+
+ul li a{
+color: white;
+font-size: 14pt;
+margin: 0px;
+padding: 0px 20px; 
+}
+h1{
+font-size: 20pt;
+}
+nav{
+width: auto;
+color: white;
+background-color: black;
+padding: 20px;  
+}
+
+section{
+display: flex;
+flex-direction: row;
+}
+
+.blocright{
+float: right;
+background-color: gray;
+height: 500px;
+width: 450px;
+margin-right: 5px;
+}
+
+.paragraph{
+width: auto;   
+text-align: justify; 
+margin-right: 5px;
+margin-left: 5px ;
+margin-top: 5px;
+
+}
+.objet{
+width: 50%;
+}
+
+ td{
+width: 25%;
+height: 25%;
+}
+
+/* commande pour évité que le bloc gris ne chevauche pas le header et le footer */
+.header-clear{
+clear: both;
+}
+
+.footer-clear{
+clear: both;
+}
+
+
+@media only screen and (max-width: 768px) 
+{ 
+.blocright{
+display: none;
+    }
+.paragraph{
+min-width: 400px;
+}
+ul{
+display: flex;
+flex-direction: column;
+}
+.logo{
+max-width: 100%;
+min-width: 50%;
+}
+html{
+    font-size:100%;
+}
+ 
+ article{
+font-size: 0.5rem;
+ }   
+
+ ul li a{
+font-size:0.5rem;
+ }
+
+}

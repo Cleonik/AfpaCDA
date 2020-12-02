@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="CVCSS.css" type="text/css" >
+    <title>CV Niquet Cléomir</title>
+</head>
+<body>
+<header>
+<div class="row justify-content-between">
+  <h1 class="col-8 col-xs-6">Niquet Cléomir</h1>
+  <p class="col-3 col-xs-6 align-right">
+        30, rue Charles FLOQUET <br>
+        80000 AMIENS <br>
+        Tél:06.77.84.20.31 <br>
+        E-mail : cleomir.niquet@gmail.com</p>
+    </div>  <hr>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="CV.html">Diplômes et Formations<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Experience.html">Expériences Professionels</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ContactCV.html">Me Contacter</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+ </header>  
+ <div class="container-fluid">
+ <form action="http://bienvu.net/script.php" method="POST"  id="inscription" name="inscription" enctype="multipart/form-data"> 
+    <div id="formulaire" >
+      <label for="nom">Nom :</label>
+      <input type="text" name="nom" id="nom" class="form-control"><br>
+      <p  id="erreur1"></p><br>
+      <label for="courriel">Adresse email :</label>
+      <input type="email" class="form-control" name="courriel" id="email" placeholder="Saisir votre adresse mail" >
+      <p id="erreur2"></p><br>
+      <label for="sujet">Sujet du Email :</label><textarea name="sujet" id="sujet" cols="50" rows="1" class="form-control"></textarea>
+      <p id="erreur3"></p><br>
+      <label for="sujet">Contenu de l'Email :</label><textarea name="sujet" id="contenu" cols="50" rows="4" class="form-control"></textarea>
+      <p id="erreur4"></p><br>
+    </div>
+    <input class="btn btn-dark" type="submit" value="Envoyer" id="submit" name="inscription"> 
+    <input class="btn btn-dark" type="reset" value="Annuler" id="annuler">
+  </form></div>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="CVJS.js"></script>
+</html>

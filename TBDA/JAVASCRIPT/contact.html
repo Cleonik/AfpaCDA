@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<title>Jarditou</title>
+
+<header class="header">
+  <div class="row justify-content-between m-0 p-0">  <img src="images/jarditou_logo.jpg" alt="Logo Jarditou" title="Logo Jarditou" class="logo col-2 d-none d-xs-block d-sm-block"> 
+    <h1 class="align-right d-none d-xs-block d-sm-block">Tout le jardin</h1>
+  </div>
+   
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Jarditou.com</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tableaux.html">tableau</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contact</a>
+          </li>
+          
+       
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Votre promotion" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+      </form>
+    </div>
+  </nav>
+
+<br>
+
+
+    <img src="images/promotion.jpg" class="promo container-fluid m-0 p-0" alt="promo" >
+<div class="header-clear"></div>
+</header>
+
+<div  class="m-1 p-1">
+
+* Ces zones sont obligatoire <br> <br>
+<form action="http://bienvu.net/script.php" method="POST" id="inscription" name="inscription" enctype="multipart/form-data"> 
+  <div class="form-group"></div>
+
+    <legend class="h2">Coordonnées</legend>
+    <label for="nom">Nom* :</label><input type="text" name="nom" id="nom" class="form-control" required><br>
+    <p  id="erreur1"></p>
+    <label for="Prénom">Prénom* : </label> <input type="text" name="prenom" id="prenom" class="form-control" required><br>
+    <p id="erreur2"></p>
+
+
+  
+    <label for="radio" > Sexe* :</label> <br>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="sexe" id="radio1" value="Femme" required>
+            <label class="form-check-label" for="radio1">Femme</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="sexe" id="radio2" value="Homme">
+            <label class="form-check-label" for="radio2">Homme</label>
+        </div>
+        <p id="erreur3"></p>
+  
+
+
+
+
+
+<br><label for="date">Date de naissance*:</label><input type="date" name="ddn" id="date" class="form-control" required>
+<p id="erreur4"></p>
+<br><label for="code postal"> Code postal* </label><input type="number" name="Codepostal" id="codepostal" class="form-control" required>
+<p id="erreur5"></p>
+<br><label for="adresse"> Adresse : </label><input type="text" name="adresse" class="form-control"> 
+<br><label for="ville"> Ville : </label><input type="text" name="ville" class="form-control"> 
+<br> 
+
+<label for="courriel">Adresse email*</label>
+<input type="email" class="form-control" name="courriel" id="email" placeholder="Saisir votre adresse mail" required>
+<p id="erreur6"></p>
+<br>
+
+
+  <legend class="h2">Votre demande</legend>
+  <label for="sujet" >Sujet :</label> <select  id="sujet" size="1" class="form-control" required>
+        <option value="" aria-required="false">Veuillez selectionnez un sujet</option> 
+        <option value="mes commandes"aria-required="true">Mes commandes</option>
+        <option value="question sur un produit" aria-required="true">Question sur un produit</option>
+        <option value="reclamation"aria-required="true">Réclamation</option>
+        <option value="autre"aria-required="true">Autres</option>
+  </select> 
+  <br>
+   Votre question* : <textarea name="question" id="question" cols="50" rows="1" class="form-control" required></textarea>
+  <p id="erreur8"></p>
+
+  <br> <input type="checkbox" id="acceptation" name="acceptation" required> * J'accepte le traitement informatique de ce formulaire  <br>
+  <p id="erreur9"></p>
+        <input class="btn btn-dark" type="submit" value="inscription" id="Id_envoyer" name="inscription"> 
+        <input class="btn btn-dark" type="reset" value="Annuler">
+</form>
+ </div>
+    </section>
+
+    <footer>
+      <div class="footer-clear"></div>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        </button>   
+        <div >
+            <ul class="navbar-nav align-content">
+            <li class="nav-item"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="Mentions légales" class="nav-link">Mentions légales</a> </li> 
+            <li class="nav-item"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="horaire" class="nav-link">Horaires</a> </li>
+            <li class="nav-item"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="Plan du site" class="nav-link"> Plan du site</a></li>
+         </ul><br>
+        </nav>
+
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="evalformulairejs.js"></script>
+</body>
+</html>
+
