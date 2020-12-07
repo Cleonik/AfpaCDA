@@ -1,16 +1,59 @@
-let form=document.querySelector('#inscription');
+var nomok = false;
+var emailok = false;
+var sujetok = false;
+var contenuok = false;
+var form=document.querySelector('#inscription');
 
-form.addEventListener('onsubmit', function(e){
+form.addEventListener('submit', function(e){
     e.preventDefault();
-    if (validcontenu==true && validsujet==true && validemail==true && validnom==true){
+    if (contenuok==true && sujetok==true && emailok==true && nomok==true){
         form.submit();
+    }
+    else if(!contenuok && sujetok==true && emailok==true && nomok==true){
+        e.preventDefault();
+        contenu_m.innerHTML='Contenu du mail manquant ou invalide';
+        contenu_m.style.color='red';
+        contenu.style.borderColor='red';
+    }
+    else if(contenuok==true && !sujetok && emailok==true && nomok==true){
+        e.preventDefault();
+        sujet_m.innerHTML='Sujet manquant ou invalide';
+        sujet_m.style.color='red';
+        sujet.style.borderColor='red';
+    }
+    else if(contenuok==true && sujetok==true && !emailok && nomok==true){
+        e.preventDefault();
+        email_m.innerHTML='Courriel manquant ou invalide';
+        email_m.style.color='red';
+        email.style.borderColor='red';
+    }
+    else if(contenuok==true && sujetok==true && emailok==true && !nomok){
+        e.preventDefault();
+        nom_m.innerHTML='Nom manquant ou invalide';
+        nom_m.style.color='red';
+        nom.style.borderColor='red';
+    }
+    else {
+        e.preventDefault();
+        contenu_m.innerHTML='Contenu du mail manquant ou invalide';
+        contenu_m.style.color='red';
+        contenu.style.borderColor='red';
+        sujet_m.innerHTML='Sujet manquant ou invalide';
+        sujet_m.style.color='red';
+        sujet.style.borderColor='red';
+        email_m.innerHTML='Courriel manquant ou invalide';
+        email_m.style.color='red';
+        email.style.borderColor='red';
+        nom_m.innerHTML='Nom manquant ou invalide';
+        nom_m.style.color='red';
+        nom.style.borderColor='red';
     }
 });
 
 
 var contenu=document.getElementById('contenu');
 var contenu_m=document.getElementById('erreur4');
-var contenu_v=/^[a-zA-Zéèàùîïâäêëüû0-9,.-_()'"^\/*-+:;=\[\]{}&#°@%¨$£¤§!<>²]+/
+var contenu_v=/^[a-zA-Zéèàùîïâäêëüû0-9.,-]+/;
 contenu.addEventListener('focusout', validcontenu);
 function validcontenu(e){
 
@@ -19,21 +62,21 @@ if ((contenu.validity.valueMissing) || (contenu_v.test(contenu.value) == false )
     contenu_m.innerHTML='Contenu du mail manquant ou invalide';
     contenu_m.style.color='red';
     contenu.style.borderColor='red';
-    return false
 }
 
 
-else{
+else {
+    test1 = true;
     contenu_m.innerHTML="Contenu du mail valide";
     contenu_m.style.color='green';
     contenu.style.borderColor='green';
-    return true;
+    contenuok=true;
 }
 }
 
 var sujet=document.getElementById('sujet');
 var sujet_m=document.getElementById('erreur3');
-var sujet_v=/^[a-zA-Zéèàùîïâäêëüû0-9,.-_()'"^\/*-+:;=\[\]{}&#°@%¨$£¤§!<>²]+/
+var sujet_v=/^[a-zA-Zéèàùîïâäêëüû0-9]+/;
 sujet.addEventListener('focusout', validsujet);
 function validsujet(e){
 
@@ -42,7 +85,6 @@ if ((sujet.validity.valueMissing) || (sujet_v.test(sujet.value) == false )){
     sujet_m.innerHTML='Sujet manquant ou invalide';
     sujet_m.style.color='red';
     sujet.style.borderColor='red';
-    return false
 }
 
 
@@ -50,7 +92,7 @@ else{
     sujet_m.innerHTML="Sujet valide";
     sujet_m.style.color='green';
     sujet.style.borderColor='green';
-    return true;
+    sujetok=true;
 }
 }
 
@@ -65,7 +107,6 @@ if ((email.validity.valueMissing) || (email_v.test(email.value) == false )){
     email_m.innerHTML='Courriel manquant ou invalide';
     email_m.style.color='red';
     email.style.borderColor='red';
-    return false
 }
 
 
@@ -73,7 +114,7 @@ else{
     email_m.innerHTML="Courriel valide";
     email_m.style.color='green';
     email.style.borderColor='green';
-    return true;
+    emailok=true;
 }
 }
 
@@ -88,7 +129,6 @@ if ((nom.validity.valueMissing) || (nom_v.test(nom.value) == false )){
     nom_m.innerHTML='Nom manquant ou invalide';
     nom_m.style.color='red';
     nom.style.borderColor='red';
-    return false;
 }
 
 
@@ -96,6 +136,6 @@ else{
     nom_m.innerHTML="Nom valide";
     nom_m.style.color='green';
     nom.style.borderColor='green';
-    return true;
+    nomok=true;
 }
 }

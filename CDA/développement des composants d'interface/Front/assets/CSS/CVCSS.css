@@ -1,11 +1,36 @@
+.logo{
+    width: 100px;
+}
+.Cleomir{
+    width: 150px;
+}
+
+h1{
+    font-size: 150%; 
+}
+ h2{
+    font-size: 110%;
+ }
+h3{
+    font-size: 100%;
+}
+a.button{
+    display:block;
+    color:#555555;
+    font-weight:bold;
+    height:30px;
+    line-height:29px;
+    margin-bottom:14px;
+    text-decoration:none;
+    width:191px;
+}
+
+a:hover.button{
+    color:#0066CC;
+}
 @media only screen and (max-width: 768px) 
 { 
-.blocright{
-display: none;
-    }
-.paragraph{
-min-width: 400px;
-}
+
 ul{
 display: flex;
 flex-direction: column;
@@ -16,12 +41,6 @@ h1{
 html{
     font-size:100%;
 }
-h5 {
-    font-size: 0.75rem;
-     } 
-h4{
-    font-size: 0.75rem;
-     } 
  p{
 font-size: 0.75rem;
  }   
@@ -29,5 +48,12 @@ font-size: 0.75rem;
  ul li a{
 font-size:0.75rem;
  }
-
+h1{
+  text-align: center;
+}
+.Cleomir{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 } 

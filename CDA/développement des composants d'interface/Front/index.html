@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="CVCSS.css" type="text/css" >
+    <link rel="stylesheet" href="assets/CSS/CVCSS.css" type="text/css" >
     <title>CV Niquet Cléomir</title>
 </head>
 <body>
 <header>
-<div class="row justify-content-between">
-<h1 class="col-8 col-xs-6">Niquet Cléomir</h1>
-<p class="col-3 col-xs-6 align-right">
-    30, rue Charles FLOQUET <br>
-    80000 AMIENS <br>
-    Tél:06.77.84.20.31 <br>
-    E-mail : cleomir.niquet@gmail.com</p>
-
+  <div class="row justify-content-between m-2 p-2">
+  <div class="col-8 col-xs-12"> 
+    <h1>Niquet Cléomir</h1>
+    <p class="coordonnee">30, rue Charles FLOQUET <br>
+       80000 AMIENS <br>
+       Tél:06.77.84.20.31 <br>
+       E-mail : cleomir.niquet@gmail.com</p>
+    </div>
+  <img src="assets/Img/moi.jpg" alt="Cleomir" class="Cleomir col-xs-12" id="Cleomir">
+  
 </div> <hr>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -27,60 +29,147 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="CV.html">Diplômes et Formations<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Experience.html">Expériences Professionels</a>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown CV" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Curriculum Vitae</a>
+            
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#formation">FORMATIONS ET DIPLOMES</a>
+                <a class="dropdown-item" href="#language">Langages maîtrisés</a>
+                <a class="dropdown-item" href="#logiciels">Logiciels maîtrisés</a>
+                <a class="dropdown-item" href="#LV">Langues maîtrisés</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#experiences">Expériences</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="ContactCV.html">Me Contacter</a>
-              </li>
-              
-           
+            </li>
           </ul>
         </div>
-      </nav>
+        <a href="https://github.com/Cleonik/AfpaCDA"><svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></a>
+        <a href="https://www.linkedin.com/in/cl%C3%A9omir-niquet-a69244201/"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" class="global-nav__logo">  
+          <g><path d="M34,2.5v29A2.5,2.5,0,0,1,31.5,34H2.5A2.5,2.5,0,0,1,0,31.5V2.5A2.5,2.5,0,0,1,2.5,0h29A2.5,2.5,0,0,1,34,2.5ZM10,13H5V29h5Zm.45-5.5A2.88,2.88,0,0,0,7.59,4.6H7.5a2.9,2.9,0,0,0,0,5.8h0a2.88,2.88,0,0,0,2.95-2.81ZM29,19.28c0-4.81-3.06-6.68-6.1-6.68a5.7,5.7,0,0,0-5.06,2.58H17.7V13H13V29h5V20.49a3.32,3.32,0,0,1,3-3.58h.19c1.59,0,2.77,1,2.77,3.52V29h5Z" fill="currentColor"></path>
+          </g>
+        </svg></a>
+        
+  </nav>
  </header>     
 <p>
-<div class="col-12 ml-2">
-    <h4>FORMATIONS ET DIPLOMES</h4>
-    <h5>Master 2, Métiers de l'enseignement, de l'éducation et de la formation</h5>
+<div class="container-fluid">
+    <h2 id="formation">FORMATIONS ET DIPLOMES</h2>
+    <h3>Master 2, Métiers de l'enseignement, de l'éducation et de la formation</h3>
     <p>Diplôme obtenu en 2019 à AMIENS Université de Picardie Jules Verne </p>
    
-    <h5>C2I2e</h5>
+    <h3>C2I2e</h3>
     <p>Diplôme obtenu en 2019 à AMIENS Université de Picardie Jules Verne</p> 
     
-    <h5>Prévention et secours civiques de niveau 1</h5>
+    <h3>Prévention et secours civiques de niveau 1</h3>
     <p>AMIENS Ecole de la Croix Rouge Française d’Amiens</p>
     
-    <h5>Master 1 Psychologie : Psychologie du handicap et des déficiences</h5>
+    <h3>Master 1 Psychologie : Psychologie du handicap et des déficiences</h3>
     <p>En 2017, obtenu à AMIENS Université de Picardie Jules Verne</p>
     
-    <h5>Licence de Psychologie</h5>
+    <h3>Licence de Psychologie</h3>
     <p>Diplôme obtenu en 2015 à AMIENS Université de Picardie Jules Verne</p> 
     
-    <h5>D.E.U.G, de Psychologie</h5> 
+    <h3>D.E.U.G, de Psychologie</h3> 
     <p>Diplôme obtenu en 2013 à AMIENS Université de Picardie Jules Verne</p> 
     
-    <h5>C21</h5> 
+    <h3>C21</h3> 
     <p>Diplôme obtenu en 2011 à AMIENS Université de Picardie Jules Verne</p>
     
-    <h5>Baccalauréat Générale Scientifique</h5>
+    <h3>Baccalauréat Générale Scientifique</h3>
     <p>Diplôme obtenu en 2010 à ABBEVILLE Lycée Bouchers de Perthes</p>
+</div><br>
+  <div class="container-fluid">
+    <h2 id="language">Langages maîtrisés</h2>
+    <img src="assets/Img/HTMLlogo.png" alt="HTMLlogo" class="HTMLlogo logo img-fluid" id="HTMLlogo">
+    <img src="assets/Img/CSSlogo.png" alt="CSSlogo" class="CSSlogo logo img-fluid" id="CSSlogo">
+    <img src="assets/Img/JSlogo.png" alt="JSlogo" class="JSlogo logo img-fluid" id="JSlogo">
+    <img src="assets/Img/MySQLlogo (2).png" alt="MySQLlogo" class="MySQLlogo logo img-fluid" id="MySQLlogo">
+    <img src="assets/Img/PHPlogo (2).png" alt="PHPlogo" class="PHPlogo logo img-fluid" id="PHPlogo"><br>
+    <br><h2 id="logiciels">Logiciels utilisés</h2>
+    <img src="assets/Img/Wamplogo.png" alt="Wamplogo" class="Womplogo logo img-fluid" id="Wamplogo">
+    <img src="assets/Img/VSCodelogo.png" alt="VSCodelogo" class="vsclogo logo img-fluid" id="vsclogo">
+    <img src="assets/Img/laragonlogo.png" alt="laragonlogo" class="laragonlogo logo img-fluid" id="laragonlogo"><br>
     
-    <h4>Logiciels maîtrisés</h4>
-    <p>Word, Excel, Visual Studio code, Laragon, Wampserver</p>
-    <h4>Langues maîtrisées</h4>
+    <br><h2 id="LV">Langues maîtrisées</h2>
     <p>Anglais niveau universitaire</p>
+  </div><br>
 
+<div class="container-fluid">
+    <h2 id="experiences">Expériences</h2>
+    <h3>Technicien logistique</h3><hr>
+      <p>01/10/2018 au 30/04/2019: K-net 13 ter rue Duroyer 80000 Amiens <br>
+        Missions ou tâches réalisées : Préparation de commande – SAV contrôle et réhabilitation
+        de matériel
+       </p>
+      
+       <h3>Animateur de colonie de vacances spécialisée dans le handicap sévère</h3><hr>
+      <p>Août 2018: Association 1000 & un Loisirs 46, rue de la Gare 59930 La Chapelle
+        d’Armentière <br>
+        Missions ou tâches réalisées : Accompagnement dans les actes de la vie quotidienne,
+        animation et surveillance de nuit
+      </p> <br>
+        
+      <h3>Professeur des écoles dans une classe de CP et grande section de
+        maternelle</h3><hr>
+      <p> Stage Professionel dans le cadre d'un Master <br>
+        Novembre 2018 à Mai 2019 : Groupe scolaire 162 Cavée de la Vigne 80310 Picquigny <br>
+        Missions ou tâches réalisées Gestion du groupe clase rédaction du cahier journal et des
+        feuilles de préparation
+      </p><br>
+
+        <h3>Professeur des écoles dans une classe de maternelle</h3><hr>
+       <p>Novembre 2017 à Mai 2018 : Ecole Communale rue de l’église 80880 de St Quentin la
+        Motte la Croix au Bailly
+        <br>
+        Missions ou tâches réalisées Gestion du groupe clase rédaction du cahier journal et des
+        feuilles de préparation
+      </p><br> 
+      
+        <h3> Animateur de colonie de vacances spécialisée dans le handicap sévère</h3><hr>
+      <p>Août 2017 : Association 1000 & un Loisirs 46, rue de la Gare 59930 La Chapelle
+        d’Armentière
+        <br>
+        Missions ou tâches réalisées : Accompagnement dans les actes de la vie quotidienne,
+        animation et surveillance de nuit
+      </p><br>  
+      
+      <h3>Préparation de commandes</h3><hr>
+      <p>Juillet 2017 : Baby drink - Route de Vauchelles – 80100 ABBEVILLE (mission intérim)
+      </p><br>
+      
+      <h3>Stagiaire psychologue spécialisé en neuropsychologie de Psychologue</h3><hr>
+      <p>Mars et Avril 2017: Stage professionnel 150h - Hôpital Maritime, Berck - en Centre de
+        Soins, de Suite et de Réadaptation <br>
+        Mission ou taches réalisées : Rédaction d’anamnèse – Réalisation de bilans cognitifs et
+        rééducation cognitive. Rédaction de bilans pour l’orientation vers des prises en charge.
+      </p><br> 
+      
+      <h3>Stagiaire psychologue spécialisé en neuropsychologie de Psychologue</h3><hr>
+      <p>Juin 2016 : Stage professionnel (200h) Hôpital Sud Amiens en Centre de Mémoire de
+        Recherche et de Référence <br>
+        Mission ou taches réalisées : Rédaction d’anamnèse – Réalisation de bilans cognitifs
+        Rédaction de bilans pour l’orientation vers des prises en charge. Réalisation de protocole
+        de recherche pour les publications
+      </p><br>
+      
+      <h3>Télé-enquêteur</h3><hr>
+      <p> Septembre 2013 à novembre 2014 : Médiamétrie, 12 bis rue Alsace Lorraine 80000
+        Amiens <br> 
+        Mission ou tâches réalisées : Recueil des audiences de la télévision et de la radio et
+        recrutement de personnes pour études.
+      </p><br> 
+      
+      <h3>Assistant d’éducation</h3><hr>
+      <p>Janvier 2012 à mai 2013 : Collège Edouard Lucas – 1, rue Edouard LUCAS 80000
+        Amiens <br>
+        Mission ou tâches réalisées : Aide aux devoirs pour les élèves de la 6è à la 3è
+      </p><br>   
     
 </div>
-</p>
-
-
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="CVJS.js"></script>
+<script src="assets/JS/CVJS.js"></script>
 </html>
