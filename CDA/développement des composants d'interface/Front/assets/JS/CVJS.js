@@ -8,6 +8,7 @@ form.addEventListener('submit', function(e){
     e.preventDefault();
     if (contenuok==true && sujetok==true && emailok==true && nomok==true){
         form.submit();
+        alert('Votre message a bien été envoyé')
     }
     else if(!contenuok && sujetok==true && emailok==true && nomok==true){
         e.preventDefault();
