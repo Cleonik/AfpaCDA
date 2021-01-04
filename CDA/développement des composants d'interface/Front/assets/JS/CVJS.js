@@ -97,7 +97,7 @@ else{
 }
 }
 
-var email=document.getElementById('email');
+var email=document.getElementById('courriel');
 var email_m=document.getElementById('erreur2');
 var email_v=/^[a-zA-Z0-9.-_]+[@]{1}[a-zA-Z0-9.-_]+[.]{1}[a-z]{2,5}$/;
 email.addEventListener('focusout', validemail);
