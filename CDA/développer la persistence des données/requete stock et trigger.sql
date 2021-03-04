@@ -107,7 +107,7 @@ FROM northwind.orders; END | CALL delai_livraisonmoy;
 /*3 -Mise en place d'une règle de gestion*/
 /*
 delimiter |
-CREATE TRIGGER gestion_fraistrans BEFORE INSERT ON northwind.`order details`
+CREATE TRIGGER gestion_fraistrans after INSERT ON northwind.`order details`
 FOR EACH ROW
 BEGIN
 DECLARE pays_customers VARCHAR(50);
@@ -122,12 +122,13 @@ JOIN products ON suppliers.SupplierID = products.SupplierID
 JOIN `order details` ON products.ProductID = `order details`.ProductID
 WHERE OrderID = new.OrderID AND ProductID = new.ProductID);
 
-if pays_customers = pays_suppliers then
-SIGNAL SQLSTATE '40000' SET MESSAGE_TEXT = 'le fournisseur et vous étes dans le même pays, aucun changement de frais port';
-else
+if pays_customers != pays_suppliers then
 SIGNAL SQLSTATE '40000' SET MESSAGE_TEXT = 'Le pays du fournisseur est différent du votre,
                         Vous êtes suceptible de payer des frais de transport important';
 END IF;
 END|
 delimiter ;
 */
+
+insert into northwind.`order details` ('OrderID', 'ProductID', 'UnitPrice', 'Quantity', 'Discount')
+VALUES (10248, 27, 0, 0, 0)
